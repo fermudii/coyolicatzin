@@ -1,0 +1,11 @@
+:host ::ng-deep .p-galleria-caption {
+  padding: 5px;
+}
+
+:host ::ng-deep .p-galleria{
+  border: none;
+}
+
+:host ::ng-deep .p-galleria-nav-button {
+  background: none;
+}

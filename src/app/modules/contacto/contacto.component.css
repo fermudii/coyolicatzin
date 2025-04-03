@@ -1,0 +1,11 @@
+.pi-custom{
+  line-height: unset;
+  font-size: var(--text-2xl) !important;
+}
+
+@media (max-width: 640px) {
+  .pi-custom {
+    font-size: var(--text-1xl) !important;
+  }
+}
+

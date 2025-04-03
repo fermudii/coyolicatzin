@@ -1,0 +1,15 @@
+:host ::ng-deep .p-menubar {
+  background: var(--p-sky-100);
+  border: none;
+}
+
+.menubar-custom {
+  @apply flex justify-center;
+}
+
+@media (max-width: 960px) {
+  .menubar-custom {
+    @apply fixed block justify-start;
+  }
+
+}
