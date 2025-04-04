@@ -3,6 +3,11 @@
   border: none;
 }
 
+:host ::ng-deep .p-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .menubar-custom {
   @apply flex justify-center;
 }

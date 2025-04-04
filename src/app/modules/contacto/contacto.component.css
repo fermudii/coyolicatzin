@@ -5,7 +5,7 @@
 
 @media (max-width: 640px) {
   .pi-custom {
-    font-size: var(--text-1xl) !important;
+    font-size: var(--text-xl) !important;
   }
 }
 
