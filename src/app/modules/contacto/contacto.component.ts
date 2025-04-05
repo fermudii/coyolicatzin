@@ -15,7 +15,7 @@ import {Tooltip, TooltipModule} from 'primeng/tooltip';
   styleUrl: './contacto.component.css'
 })
 export class ContactoComponent {
-  email: string = "fparra@gmail.com";
+  email: string = "contacto@coyolicatzin.com";
   copied: boolean = false;
   @ViewChild(Tooltip) tooltip: Tooltip | undefined;
 
