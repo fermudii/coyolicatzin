@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="card flex justify-center p-20">
+  <div *ngIf="images && images.length > 0" class="grid grid-cols-12 gap-4" style="max-width: 800px;">
+    <div *ngFor="let image of images; let index = index" class="col-span-12 md:col-span-4" key="index">
+      <img [src]="image.itemImageSrc" [alt]="image.alt" style="cursor: pointer" (click)="imageClick(index)" />
+    </div>
+  </div>
+  <p-galleria
+    [value]="images"
+    [(visible)]="displayCustom"
+    [(activeIndex)]="activeIndex"
+    [responsiveOptions]="responsiveOptions"
+    [containerStyle]="{ 'max-width': '850px' }"
+    [numVisible]="7"
+    [circular]="true"
+    [showThumbnailNavigators]="true"
+    [fullScreen]="true"
+    [showItemNavigators]="true"
+    [showThumbnails]="false"
+  >
+    <ng-template #item let-item>
+      <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template #caption let-item>
+      <p class="text-white">{{ item.alt }}</p>
+    </ng-template>
+  </p-galleria>
+</div>
+<app-footer></app-footer>

@@ -5,6 +5,7 @@ import {BodaComponent} from './modules/boda/boda.component';
 import {ContactoComponent} from './modules/contacto/contacto.component';
 import {BioComponent} from './modules/bio/bio.component';
 import {MusicaComponent} from './modules/musica/musica.component';
+import {GaleriaComponent} from "./modules/galeria/galeria.component";
 
 export const routes: Routes = [
   {
@@ -31,6 +32,11 @@ export const routes: Routes = [
     path: 'contacto',
     title: 'Contacto!',
     component: ContactoComponent,
+  },
+  {
+    path: 'galeria',
+    title: 'Galeria!',
+    component: GaleriaComponent,
   },
   {
     path: '**',
