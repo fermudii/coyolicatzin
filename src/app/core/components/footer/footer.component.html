@@ -1,15 +1,14 @@
 
-<section class="min-h-[480px] md:min-h-[280px] z-0 pointer-events-none">
+<section class="min-h-[480px] md:min-h-[280px] z-0">
 </section>
 <footer class="fixed bottom-0 left-0 w-full z-1">
-  <video autoplay muted loop playsinline preload="auto" class="absolute top-0 left-0 w-full h-full object-cover object-left-top z-0">
-    <source src="footer.mp4" type="video/mp4" />
-    Tu navegador no soporta videos HTML5.
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover object-left-top z-0"
+         src="https://mudiicontent.s3.us-east-2.amazonaws.com/coyo/footer.mp4">
   </video>
   <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-1"></div>
 
-  <div class="relative z-10 text-white py-16 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-lg text-white">
+  <div class="relative z-10 text-[rgba(246,246,246,.8)] py-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-lg">
 
       <!-- Branding -->
       <div>
@@ -19,14 +18,14 @@
       <!-- Enlaces -->
       <div>
         <ul class="space-y-2">
-          <li><a href="/" class="hover:text-white transition">Inicio</a></li>
-          <li><a href="#musica" class="hover:text-white transition">Música</a></li>
-          <li><a href="#bio" class="hover:text-white transition">Biografía</a></li>
+          <li><a href="#inicio" (click)="scrollTo('inicio', $event)" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="#musica" (click)="scrollTo('musica', $event)" class="hover:text-white transition">Música</a></li>
+          <li><a href="#bio" (click)="scrollTo('bio', $event)" class="hover:text-white transition">Biografía</a></li>
         </ul>
       </div>
 
       <!-- Redes sociales -->
-      <div class="mt-8 border-t md:border-t-0 border-white pt-6">
+      <div class="mt-8 border-t md:border-t-0 border-[rgba(246,246,246,.5)] pt-6">
         <div class="flex space-x-4">
           <a href="https://www.facebook.com/colibridelmonte0" target="_blank" class="hover:text-white transition">Facebook</a>
           <a href="https://www.instagram.com/coyo_licatzin/" target="_blank" class="hover:text-white transition">Instagram</a>
@@ -36,7 +35,7 @@
 
     </div>
 
-    <div class="mt-8 border-t border-white pt-6 text-center text-xs ">
+    <div class="mt-8 border-t border-[rgba(246,246,246,.5)] pt-6 text-center text-xs ">
       &copy; 2025 Coyolicatzin. Todos los derechos reservados.
     </div>
   </div>

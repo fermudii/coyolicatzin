@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { Menubar } from 'primeng/menubar';
 import { MenuItem } from 'primeng/api';
+import {scrollToElementById} from '../../../shared/constants';
 
 @Component({
   selector: 'app-navbar',
@@ -15,19 +16,19 @@ export class NavbarComponent implements OnInit {
     this.items = [
       {
         label: 'Inicio',
-        url: '#inicio'
+        command: () => scrollToElementById('inicio', -60)
       },
       {
         label: 'Musica',
-        url: '#musica'
+        command: () => scrollToElementById('musica', -60)
       },
       {
         label: 'Bio',
-        url: '#bio'
+        command: () => scrollToElementById('bio', -60)
       },
       {
         label: 'Contacto',
-        url: '#contacto'
+        command: () => scrollToElementById('contacto', -60)
       }
 
     ]

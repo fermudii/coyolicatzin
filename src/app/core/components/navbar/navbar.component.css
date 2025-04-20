@@ -1,6 +1,7 @@
 :host ::ng-deep .p-menubar {
   border: none;
-  background: transparent;
+  background: rgb(246, 246, 246);
+  padding: 1rem;
 }
 
 :host ::ng-deep .p-icon {
@@ -8,11 +9,10 @@
   height: 1.5rem;
 }
 
-/* Estilos comunes */
-::ng-deep .responsive-menubar {
-  border-radius: 0.5rem;
-  padding: 0.5rem;
+:host ::ng-deep .p-menubar-mobile-active .p-menubar-root-list {
+  border-radius: 1rem;
 }
+
 
 /* Layout vertical en desktop */
 @media (min-width: 960px) {
@@ -26,5 +26,8 @@
 
   ::ng-deep .responsive-menubar .p-menuitem {
     margin-bottom: 0.5rem;
+  }
+  ::ng-deep .p-menubar {
+    background: transparent !important;
   }
 }
