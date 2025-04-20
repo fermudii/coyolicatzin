@@ -1,6 +1,6 @@
 .pi-custom{
   line-height: unset;
-  font-size: var(--text-2xl) !important;
+  font-size: var(--text-xl) !important;
 }
 
 @media (max-width: 640px) {

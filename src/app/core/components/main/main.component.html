@@ -1,16 +1,39 @@
-<app-navbar></app-navbar>
-<div class="flex flex-col justify-center items-center h-dvh">
-  <img src="colibri.svg"
-       class="animate-pulse duration-1000 w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 max-w-xs"
-       alt="colibri"/>
-  <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Coyolicatzin</h1>
-  <br>
-  <br>
-  <div class="flex flex-row">
-    <p class="text-xl font-semibold tracking-tight text-balance transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-700  text-gray-900 sm:text-2xl p-4"><a href="https://www.facebook.com/colibridelmonte0" target="_blank">Facebook</a></p>
-    <p class="text-xl font-semibold tracking-tight text-balance transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-rose-600 text-gray-900 sm:text-2xl p-4"><a href="https://www.instagram.com/coyo_licatzin/" target="_blank">Instagram</a></p>
-    <p class="text-xl font-semibold tracking-tight text-balance transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-cyan-500  text-gray-900 sm:text-2xl p-4"><a href="https://www.tiktok.com/@coyolicatzin1" target="_blank">TikTok</a></p>
+
+  <app-navbar></app-navbar>
+  <div class="bg-light rounded-b-2xl pt-24 relative grid grid-cols-6 gap-3 md:grid-cols-12 max-w-screen-2xl mx-auto px-10 md:px-24 z-10">
+    <div class="col-start-1 col-end-7 md:col-start-4 md:col-end-10">
+      <div class="flex flex-col gap-20">
+        <section id="inicio" class="flex flex-col justify-center items-center">
+          <img src="colibri.svg"
+               class="animate-pulse duration-1000 w-1/2 max-w-xs"
+               alt="colibri"/>
+          <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Coyolicatzin</h1>
+          <br>
+          <br>
+          <div class="flex flex-row">
+            <p class="text-xl font-semibold tracking-tight text-balance transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-700  text-gray-900 sm:text-2xl p-4"><a href="https://www.facebook.com/colibridelmonte0" target="_blank">Facebook</a></p>
+            <p class="text-xl font-semibold tracking-tight text-balance transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-rose-600 text-gray-900 sm:text-2xl p-4"><a href="https://www.instagram.com/coyo_licatzin/" target="_blank">Instagram</a></p>
+            <p class="text-xl font-semibold tracking-tight text-balance transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-cyan-500  text-gray-900 sm:text-2xl p-4"><a href="https://www.tiktok.com/@coyolicatzin1" target="_blank">TikTok</a></p>
+          </div>
+        </section>
+        <div class="line"></div>
+        <section id="bio">
+          <app-bio></app-bio>
+        </section>
+        <div class="line"></div>
+        <section id="musica">
+          <app-musica></app-musica>
+        </section>
+        <div class="line"></div>
+        <section id="contacto">
+          <app-contacto></app-contacto>
+        </section>
+        <div class="line"></div>
+      </div>
+
+
+
+    </div>
   </div>
-</div>
 
 <app-footer></app-footer>

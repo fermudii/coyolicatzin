@@ -1,34 +1,12 @@
-<app-navbar></app-navbar>
-<div class="flex">
-  <h1 class="text-5xl mb-10 ml-10 mt-30 font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Bio</h1>
-</div>
-<div class="flex flex-col lg:flex-row justify-center h-screen space-y-4">
-  <div class="basis-1/3 lg:basis-1/2 h-2/4 overflow-y-auto hide-scrollbar">
-    <p class="text-xl/8 pl-10 pr-10  text-justify text-gray-800 sm:text-xl/8">Emma Coyolicatzin Hernández Solórzano, mejor conocida en el ámbito artístico como Coyolicatzin o simplemente “Coyo”, es una cantante y compositora originaria de Ixtepec, Oaxaca. Su herencia zapoteca no solo es una parte esencial de su identidad, sino también una fuente constante de inspiración en su carrera musical.
-        Desde muy joven mostró una conexión profunda con la música, lo que la llevó a estudiar flauta transversal durante siete años, cimentando así sus primeros pasos dentro del arte sonoro. Esta formación inicial fue el punto de partida para una trayectoria marcada por la búsqueda constante de expresión y autenticidad.
-        Las influencias musicales de Coyo son tan diversas como su estilo: desde la fuerza poética de Mercedes Sosa y Silvio Rodríguez, hasta la energía de Ca7riel y Paco Amoroso. También ha explorado géneros como el bolero, la salsa, el urbano y el pop, permitiéndole construir una voz única y multifacética.
-        Con el deseo de perfeccionar su técnica y ampliar su horizonte artístico, se trasladó a Xalapa, Veracruz, donde estudió la Licenciatura en Música en el Centro de Estudios de Jazz de la Universidad Veracruzana (JazzUV). Esta etapa fue clave en el desarrollo de su estilo vocal y compositivo.
-        En 2018, ante la ola de violencia contra las mujeres en México y su estado natal, Emma compuso “Llueve Sangre en la Ciudad”, una canción que nació del dolor pero también de la necesidad de visibilizar y transformar esa realidad. El tema se viralizó rápidamente, alcanzando millones de reproducciones en redes sociales. En 2020, fue lanzado de manera oficial junto con su primer video musical gracias al respaldo de Casa Studio.
-        Además de esta poderosa canción, Coyolicatzin ha publicado temas como “Leopardo Morado” y “Diana”, donde sigue explorando distintos matices de su voz y sensibilidad artística. Más recientemente, ha incursionado en sonidos urbanos al colaborar con el músico y productor Santiago Armijo en la canción “¿Qué Soñaste?”.
-        Ha sido parte de proyectos relevantes en la escena musical, incluyendo su participación como corista en el álbum De Todas las Flores de Natalia Lafourcade. También ha presentado su propuesta escénica y musical La Metamorfosis del Biulu en distintos espacios culturales dentro y fuera de Oaxaca.
-        Emma Coyolicatzin es una voz emergente con una propuesta sincera, poderosa y profundamente conectada con su entorno. A través de su música, busca abrir espacios de reflexión, memoria y esperanza, apostando por el arte como herramienta de transformación.
-    </p>
-
-  </div>
-  <div class="basis-2/3 lg:basis-1/2 flex flex-col items-center  m-10 lg:m-0">
-    <p-galleria [value]="images" [autoPlay]="true" [showThumbnails]="false" [containerStyle]="{ 'max-width': '640px'}">
+<h1 class="text-2xl font-semibold pb-20 text-gray-900">Biografía</h1>
+<p class="text-justify text-terniary">Emma Coyolicatzin Hernández Solórzano, mejor conocida en el ámbito artístico como Coyolicatzin o simplemente “Coyo”, es una cantante y compositora originaria de Ixtepec, Oaxaca. Su herencia zapoteca no solo es una parte esencial de su identidad, sino también una fuente constante de inspiración en su carrera musical.
+        Desde muy joven mostró una conexión profunda con la música, lo que la llevó a estudiar flauta transversal durante siete años, cimentando así sus primeros pasos dentro del arte sonoro.</p>
+  <div class="pt-20">
+    <p-galleria [value]="images" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false">
       <ng-template #item let-item>
-        <div class="w-full h-[250px] lg:h-[400px] flex justify-center bg-black">
-          <img [src]="item.itemImageSrc" class="max-w-full max-h-full object-contain" />
+        <div>
+          <img class="rounded-2xl overflow-hidden" [src]="item.itemImageSrc" />
         </div>
       </ng-template>
-      <ng-template #caption let-item>
-        <p class="text-white">{{ item.alt }}</p>
-      </ng-template>
     </p-galleria>
-      <h1 class="p-10 text-3xl font-semibold tracking-tight text-balance transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-red-600 text-gray-900 sm:text-5xl"><a routerLink="/galeria">Galería</a></h1>
-
   </div>
-</div>
-
-<app-footer></app-footer>

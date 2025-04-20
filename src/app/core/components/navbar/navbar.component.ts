@@ -15,19 +15,19 @@ export class NavbarComponent implements OnInit {
     this.items = [
       {
         label: 'Inicio',
-        routerLink: '/'
+        url: '#inicio'
       },
       {
         label: 'Musica',
-        routerLink: '/musica'
+        url: '#musica'
       },
       {
         label: 'Bio',
-        routerLink: '/bio'
+        url: '#bio'
       },
       {
         label: 'Contacto',
-        routerLink: '/contacto'
+        url: '#contacto'
       }
 
     ]

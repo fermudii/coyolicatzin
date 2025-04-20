@@ -1,16 +1,13 @@
-<app-navbar></app-navbar>
-<div class="flex flex-col justify-center items-center h-dvh space-y-4">
-  <h1 class="text-3xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Manager</h1>
-  <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Frida Parra</h1>
-  <div class="flex flex-row space-x-2">
-    <h1 class="text-xl font-semibold tracking-tight text-balance text-gray-900 sm:text-3xl">{{ email }}</h1>
-    <i class="pi pi-copy cursor-pointer hover:text-blue-700 pi-custom"
-       [pTooltip]="copied ? 'Copiado!': ''"
-       [life]="2000" tooltipEvent="focus"
-       tooltipPosition="bottom"
-       (click)="copyEmail()"
-    ></i>
+<h1 class="text-2xl font-semibold pb-20 text-gray-900">Contacto</h1>
+<p class="text-terniary">
+  Para contrataciones, colaboraciones o más información sobre Coyolicatzin, pueden comunicarse directamente con Frida Parra al siguiente correo:
+</p>
+<a class=" mt-10 rounded-2xl overflow-hidden block shadow"
+   (click)="copyEmail()" [pTooltip]="copied ? 'Copiado!': ''"
+   [life]="2000" tooltipEvent="focus"
+   tooltipPosition="top">
+  <div class="flex items-center py-5 px-6 bg-white">
+    <span class="text-button flex-1">{{email}}</span>
+    <span class="pi pi-copy"></span>
   </div>
-
-</div>
-<app-footer></app-footer>
+</a>

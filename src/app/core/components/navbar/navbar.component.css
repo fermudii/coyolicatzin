@@ -1,6 +1,6 @@
 :host ::ng-deep .p-menubar {
-  background: var(--p-sky-100);
   border: none;
+  background: transparent;
 }
 
 :host ::ng-deep .p-icon {
@@ -8,13 +8,23 @@
   height: 1.5rem;
 }
 
-.menubar-custom {
-  @apply flex justify-center;
+/* Estilos comunes */
+::ng-deep .responsive-menubar {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
-@media (max-width: 960px) {
-  .menubar-custom {
-    @apply fixed block justify-start;
+/* Layout vertical en desktop */
+@media (min-width: 960px) {
+  ::ng-deep .responsive-menubar {
+    flex-direction: column !important;
   }
 
+  ::ng-deep .responsive-menubar .p-menubar-root-list {
+    flex-direction: column !important;
+  }
+
+  ::ng-deep .responsive-menubar .p-menuitem {
+    margin-bottom: 0.5rem;
+  }
 }
