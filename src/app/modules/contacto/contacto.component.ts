@@ -7,8 +7,6 @@ import {Tooltip, TooltipModule} from 'primeng/tooltip';
 @Component({
   selector: 'app-contacto',
   imports: [
-    NavbarComponent,
-    FooterComponent,
     Tooltip
   ],
   templateUrl: './contacto.component.html',

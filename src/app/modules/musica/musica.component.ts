@@ -4,10 +4,7 @@ import {FooterComponent} from '../../core/components/footer/footer.component';
 
 @Component({
   selector: 'app-musica',
-  imports: [
-    NavbarComponent,
-    FooterComponent
-  ],
+  imports: [],
   templateUrl: './musica.component.html',
   styleUrl: './musica.component.css'
 })
