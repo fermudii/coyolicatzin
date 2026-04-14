@@ -1,10 +1,5 @@
 export const GALLERY_IMAGES = [
   {
-    itemImageSrc: 'https://mudiicontent.s3.us-east-2.amazonaws.com/coyo/coli-cauz.jpg',
-    alt: 'Cauz, Xalapa, Veracruz 2022',
-    title: 'Title 1'
-  },
-  {
     itemImageSrc: 'https://mudiicontent.s3.us-east-2.amazonaws.com/coyo/Comitancillo-10.webp',
     alt: 'San Pedro Comitancillo, Oaxaca 2022',
     title: 'Title 1'
