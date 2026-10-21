@@ -13,5 +13,4 @@ import {GALLERY_IMAGES} from "../../shared/constants";
 export class BioComponent {
   index = 0;
   images = GALLERY_IMAGES;
-
 }
