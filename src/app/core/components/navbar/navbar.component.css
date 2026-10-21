@@ -4,6 +4,14 @@
   padding: 1rem;
 }
 
+:host ::ng-deep .p-menubar-button {
+  color: black;
+}
+
+:host ::ng-deep .p-menubar-item-content {
+  color: black;
+}
+
 :host ::ng-deep .p-icon {
   width: 1.5rem;
   height: 1.5rem;
